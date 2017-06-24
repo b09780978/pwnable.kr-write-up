@@ -23,7 +23,7 @@ env["\xde\xad\xbe\xef"] = "\xca\xfe\xba\xbe"
 # print env['PATH']
 
 # stage 4: file
-f = file("\x0a", "wb")
+f = open("\x0a", "wb")
 f.write("\x00\x00\x00\x00")
 f.close()
 
