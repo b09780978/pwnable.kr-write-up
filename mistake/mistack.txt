@@ -1,0 +1,4 @@
+Since fd=open("/home/mistake/password")<0,
+result is fd = 0.
+and then read(fd, pw_buf, PW_LEN) will become stdin
+you can control the password and xor result
