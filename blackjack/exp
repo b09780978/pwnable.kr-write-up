@@ -1,0 +1,3 @@
+nc pwnable.kr 9009
+bet -10000000000000000
+play to lose
