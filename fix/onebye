@@ -1,0 +1,256 @@
+[+] origin shellcode
+0         ...
+1    0:   01                      .byte 0x1
+2    0:   02                      .byte 0x2
+3    0:   03                      .byte 0x3
+4    0:   04                      .byte 0x4
+5    0:   05                      .byte 0x5
+6    0:   06                      push   es
+7    0:   07                      pop    es
+8    0:   08                      .byte 0x8
+9    0:   09                      .byte 0x9
+10    0:   0a                      .byte 0xa
+11    0:   0b                      .byte 0xb
+12    0:   0c                      .byte 0xc
+13    0:   0d                      .byte 0xd
+14    0:   0e                      push   cs
+15    0:   0f                      .byte 0xf
+16    0:   10                      .byte 0x10
+17    0:   11                      .byte 0x11
+18    0:   12                      .byte 0x12
+19    0:   13                      .byte 0x13
+20    0:   14                      .byte 0x14
+21    0:   15                      .byte 0x15
+22    0:   16                      push   ss
+23    0:   17                      pop    ss
+24    0:   18                      .byte 0x18
+25    0:   19                      .byte 0x19
+26    0:   1a                      .byte 0x1a
+27    0:   1b                      .byte 0x1b
+28    0:   1c                      .byte 0x1c
+29    0:   1d                      .byte 0x1d
+30    0:   1e                      push   ds
+31    0:   1f                      pop    ds
+32    0:   20                      .byte 0x20
+33    0:   21                      .byte 0x21
+34    0:   22                      .byte 0x22
+35    0:   23                      .byte 0x23
+36    0:   24                      .byte 0x24
+37    0:   25                      .byte 0x25
+38    0:   26                      es
+39    0:   27                      daa
+40    0:   28                      .byte 0x28
+41    0:   29                      .byte 0x29
+42    0:   2a                      .byte 0x2a
+43    0:   2b                      .byte 0x2b
+44    0:   2c                      .byte 0x2c
+45    0:   2d                      .byte 0x2d
+46    0:   2e                      cs
+47    0:   2f                      das
+48    0:   30                      .byte 0x30
+49    0:   31                      .byte 0x31
+50    0:   32                      .byte 0x32
+51    0:   33                      .byte 0x33
+52    0:   34                      .byte 0x34
+53    0:   35                      .byte 0x35
+54    0:   36                      ss
+55    0:   37                      aaa
+56    0:   38                      .byte 0x38
+57    0:   39                      .byte 0x39
+58    0:   3a                      .byte 0x3a
+59    0:   3b                      .byte 0x3b
+60    0:   3c                      .byte 0x3c
+61    0:   3d                      .byte 0x3d
+62    0:   3e                      ds
+63    0:   3f                      aas
+64    0:   40                      inc    eax
+65    0:   41                      inc    ecx
+66    0:   42                      inc    edx
+67    0:   43                      inc    ebx
+68    0:   44                      inc    esp
+69    0:   45                      inc    ebp
+70    0:   46                      inc    esi
+71    0:   47                      inc    edi
+72    0:   48                      dec    eax
+73    0:   49                      dec    ecx
+74    0:   4a                      dec    edx
+75    0:   4b                      dec    ebx
+76    0:   4c                      dec    esp
+77    0:   4d                      dec    ebp
+78    0:   4e                      dec    esi
+79    0:   4f                      dec    edi
+80    0:   50                      push   eax
+81    0:   51                      push   ecx
+82    0:   52                      push   edx
+83    0:   53                      push   ebx
+84    0:   54                      push   esp
+85    0:   55                      push   ebp
+86    0:   56                      push   esi
+87    0:   57                      push   edi
+88    0:   58                      pop    eax
+89    0:   59                      pop    ecx
+90    0:   5a                      pop    edx
+91    0:   5b                      pop    ebx
+92    0:   5c                      pop    esp
+93    0:   5d                      pop    ebp
+94    0:   5e                      pop    esi
+95    0:   5f                      pop    edi
+96    0:   60                      pusha
+97    0:   61                      popa
+98    0:   62                      .byte 0x62
+99    0:   63                      .byte 0x63
+100    0:   64                      fs
+101    0:   65                      gs
+102    0:   66                      data16
+103    0:   67                      addr16
+104    0:   68                      .byte 0x68
+105    0:   69                      .byte 0x69
+106    0:   6a                      .byte 0x6a
+107    0:   6b                      .byte 0x6b
+108    0:   6c                      ins    BYTE PTR es:[edi],dx
+109    0:   6d                      ins    DWORD PTR es:[edi],dx
+110    0:   6e                      outs   dx,BYTE PTR ds:[esi]
+111    0:   6f                      outs   dx,DWORD PTR ds:[esi]
+112    0:   70                      .byte 0x70
+113    0:   71                      .byte 0x71
+114    0:   72                      .byte 0x72
+115    0:   73                      .byte 0x73
+116    0:   74                      .byte 0x74
+117    0:   75                      .byte 0x75
+118    0:   76                      .byte 0x76
+119    0:   77                      .byte 0x77
+120    0:   78                      .byte 0x78
+121    0:   79                      .byte 0x79
+122    0:   7a                      .byte 0x7a
+123    0:   7b                      .byte 0x7b
+124    0:   7c                      .byte 0x7c
+125    0:   7d                      .byte 0x7d
+126    0:   7e                      .byte 0x7e
+127    0:   7f                      .byte 0x7f
+128    0:   80                      .byte 0x80
+129    0:   81                      .byte 0x81
+130    0:   82                      .byte 0x82
+131    0:   83                      .byte 0x83
+132    0:   84                      .byte 0x84
+133    0:   85                      .byte 0x85
+134    0:   86                      .byte 0x86
+135    0:   87                      .byte 0x87
+136    0:   88                      .byte 0x88
+137    0:   89                      .byte 0x89
+138    0:   8a                      .byte 0x8a
+139    0:   8b                      .byte 0x8b
+140    0:   8c                      .byte 0x8c
+141    0:   8d                      .byte 0x8d
+142    0:   8e                      .byte 0x8e
+143    0:   8f                      .byte 0x8f
+144    0:   90                      nop
+145    0:   91                      xchg   ecx,eax
+146    0:   92                      xchg   edx,eax
+147    0:   93                      xchg   ebx,eax
+148    0:   94                      xchg   esp,eax
+149    0:   95                      xchg   ebp,eax
+150    0:   96                      xchg   esi,eax
+151    0:   97                      xchg   edi,eax
+152    0:   98                      cwde
+153    0:   99                      cdq
+154    0:   9a                      .byte 0x9a
+155    0:   9b                      fwait
+156    0:   9c                      pushf
+157    0:   9d                      popf
+158    0:   9e                      sahf
+159    0:   9f                      lahf
+160    0:   a0                      .byte 0xa0
+161    0:   a1                      .byte 0xa1
+162    0:   a2                      .byte 0xa2
+163    0:   a3                      .byte 0xa3
+164    0:   a4                      movs   BYTE PTR es:[edi],BYTE PTR ds:[esi]
+165    0:   a5                      movs   DWORD PTR es:[edi],DWORD PTR ds:[esi]
+166    0:   a6                      cmps   BYTE PTR ds:[esi],BYTE PTR es:[edi]
+167    0:   a7                      cmps   DWORD PTR ds:[esi],DWORD PTR es:[edi]
+168    0:   a8                      .byte 0xa8
+169    0:   a9                      .byte 0xa9
+170    0:   aa                      stos   BYTE PTR es:[edi],al
+171    0:   ab                      stos   DWORD PTR es:[edi],eax
+172    0:   ac                      lods   al,BYTE PTR ds:[esi]
+173    0:   ad                      lods   eax,DWORD PTR ds:[esi]
+174    0:   ae                      scas   al,BYTE PTR es:[edi]
+175    0:   af                      scas   eax,DWORD PTR es:[edi]
+176    0:   b0                      .byte 0xb0
+177    0:   b1                      .byte 0xb1
+178    0:   b2                      .byte 0xb2
+179    0:   b3                      .byte 0xb3
+180    0:   b4                      .byte 0xb4
+181    0:   b5                      .byte 0xb5
+182    0:   b6                      .byte 0xb6
+183    0:   b7                      .byte 0xb7
+184    0:   b8                      .byte 0xb8
+185    0:   b9                      .byte 0xb9
+186    0:   ba                      .byte 0xba
+187    0:   bb                      .byte 0xbb
+188    0:   bc                      .byte 0xbc
+189    0:   bd                      .byte 0xbd
+190    0:   be                      .byte 0xbe
+191    0:   bf                      .byte 0xbf
+192    0:   c0                      .byte 0xc0
+193    0:   c1                      .byte 0xc1
+194    0:   c2                      .byte 0xc2
+195    0:   c3                      ret
+196    0:   c4                      .byte 0xc4
+197    0:   c5                      .byte 0xc5
+198    0:   c6                      .byte 0xc6
+199    0:   c7                      .byte 0xc7
+200    0:   c8                      .byte 0xc8
+201    0:   c9                      leave
+202    0:   ca                      .byte 0xca
+203    0:   cb                      retf
+204    0:   cc                      int3
+205    0:   cd                      .byte 0xcd
+206    0:   ce                      into
+207    0:   cf                      iret
+208    0:   d0                      .byte 0xd0
+209    0:   d1                      .byte 0xd1
+210    0:   d2                      .byte 0xd2
+211    0:   d3                      .byte 0xd3
+212    0:   d4                      .byte 0xd4
+213    0:   d5                      .byte 0xd5
+214    0:   d6                      (bad)
+215    0:   d7                      xlat   BYTE PTR ds:[ebx]
+216    0:   d8                      .byte 0xd8
+217    0:   d9                      .byte 0xd9
+218    0:   da                      .byte 0xda
+219    0:   db                      .byte 0xdb
+220    0:   dc                      .byte 0xdc
+221    0:   dd                      .byte 0xdd
+222    0:   de                      .byte 0xde
+223    0:   df                      .byte 0xdf
+224    0:   e0                      .byte 0xe0
+225    0:   e1                      .byte 0xe1
+226    0:   e2                      .byte 0xe2
+227    0:   e3                      .byte 0xe3
+228    0:   e4                      .byte 0xe4
+229    0:   e5                      .byte 0xe5
+230    0:   e6                      .byte 0xe6
+231    0:   e7                      .byte 0xe7
+232    0:   e8                      .byte 0xe8
+233    0:   e9                      .byte 0xe9
+234    0:   ea                      .byte 0xea
+235    0:   eb                      .byte 0xeb
+236    0:   ec                      in     al,dx
+237    0:   ed                      in     eax,dx
+238    0:   ee                      out    dx,al
+239    0:   ef                      out    dx,eax
+240    0:   f0                      lock
+241    0:   f1                      icebp
+242    0:   f2                      repnz
+243    0:   f3                      repz
+244    0:   f4                      hlt
+245    0:   f5                      cmc
+246    0:   f6                      .byte 0xf6
+247    0:   f7                      .byte 0xf7
+248    0:   f8                      clc
+249    0:   f9                      stc
+250    0:   fa                      cli
+251    0:   fb                      sti
+252    0:   fc                      cld
+253    0:   fd                      std
+254    0:   fe                      .byte 0xfe

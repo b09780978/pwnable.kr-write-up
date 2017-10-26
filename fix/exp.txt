@@ -1,0 +1,9 @@
+1. mkdir in /tmp/{your_dictionary}
+2. put exp.sh and exp.py
+3. execute sh exp.sh
+4. enter '\n'
+5. cat /home/fix/flag
+
+bug is on "push eax" instruction is on stack,
+so your need to change your esp.
+use ulimit -s unlimited to make esp can contain a very big value
