@@ -1,0 +1,8 @@
+1. put exp.sh and exp.py
+2. ulimit -f 0
+3. sh exp.sh
+
+bug is you can limit the file size to 0,
+it will make file data is empty,
+and then  sprintf(fname, "/tmp/%llu", otp[0]); will empty
+passcode ==> 0
